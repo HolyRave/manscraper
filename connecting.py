@@ -14,3 +14,4 @@ try:
     db_connection = create_engine(db_connection_str)
 except Exception as e:
     print(e)
+    exit()
