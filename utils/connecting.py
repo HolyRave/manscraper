@@ -13,5 +13,6 @@ try:
     db_connection_str = f'mysql+pymysql://{user}:{password}@{host}/{database}?charset=utf8mb4'
     db_connection = create_engine(db_connection_str)
 except Exception as e:
-    print(e)
+    print('Error has occurred:')
+    input(str(e) + '\n Press enter to continue...')
     exit()
